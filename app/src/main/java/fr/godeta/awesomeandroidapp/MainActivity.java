@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import fr.godeta.awesomeandroidapp.weatherAPI.Weather;
+
 public class MainActivity extends AppCompatActivity {
     private Button weather, map, calc;
     @Override
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         weather.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent otherActivity = new Intent(getApplicationContext(),Weather.class);
+                Intent otherActivity = new Intent(getApplicationContext(), Weather.class);
                 startActivity(otherActivity);
                 finish();
             }
