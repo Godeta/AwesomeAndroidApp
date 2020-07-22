@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import fr.godeta.awesomeandroidapp.weatherAPI.Weather;
-
 public class MainActivity extends AppCompatActivity {
     private Button weather, map, calc;
     @Override

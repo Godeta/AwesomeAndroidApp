@@ -13,14 +13,14 @@ public class Common extends Activity {
     public String API_LINK = getResources().getString(R.string.weather_API_link);
 */
     public static String API_KEY = "099e940ce07582a3843844c30bde0f63";
-    public static String API_LINK = "http://api.openweathermap.org/data/2.5/weather";
+    public static String API_LINK = "https://api.openweathermap.org/data/2.5/weather";
     //car appel de l'api : api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={your api key}
 
 
     @NonNull
     public static String apiRequest(String lat, String lng){
         StringBuilder sb = new StringBuilder(API_LINK);
-        sb.append(String.format("?lat=%s&lon=%s&APPID=%s&units=metric",lat,lng,API_KEY));
+        sb.append(String.format("?lat=%s&lon=%s&APPID=%s&units=metric&lang=fr",lat,lng,API_KEY));
         return sb.toString();
     }
 
